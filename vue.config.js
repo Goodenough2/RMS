@@ -109,11 +109,25 @@ module.exports = {
             .use('script-ext-html-webpack-plugin', [{
             // `runtime` must same as runtimeChunk name. default is `runtime`
               inline: /runtime\..*\.js$/
-            }])
-            .end()
+            }]);
+
+          //图片压缩处理器
+          config.module
+          .rule('images')
+          .use('image-webpack-loader')
+          .loader('image-webpack-loader')
+          .options({
+            mozjpeg: { progressive: true, quality: 75 },
+            optipng: { enabled: true },
+            pngquant: { quality: [0.65, 0.90], speed: 4 },
+            gifsicle: { interlaced: false },
+            webp: { quality: 75 },
+          });
+
+          // 代码分包
           config
             .optimization.splitChunks({
-              chunks: 'all',
+              chunks: 'all', // 对所有的chunk包括异步和同步都做拆分处理
               cacheGroups: {
                 libs: {
                   name: 'chunk-libs',
