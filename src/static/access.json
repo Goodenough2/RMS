@@ -1,0 +1,124 @@
+{
+  "code": 20000,
+  "data": {
+    "access": {
+      "SystemOperation": {
+        "informationEntry": {
+          "allow": true,
+          "view": {
+            "allow": true
+          },
+          "create": {
+            "allow": true
+          },
+          "update": {
+            "allow": true
+          },
+          "detail": {
+            "allow": true
+          },
+          "delete": {
+            "allow": true
+          }
+        },
+        "allow": true
+      },
+      "SystemManage": {
+        "Role": {
+          "allow": true,
+          "view": {
+            "allow": true
+          },
+          "create": {
+            "allow": true
+          },
+          "update": {
+            "allow": true
+          },
+          "detail": {
+            "allow": true
+          },
+          "delete": {
+            "allow": true
+          }
+        },
+        "allow": true,
+        "Function": {
+          "allow": true,
+          "view": {
+            "allow": true
+          },
+          "create": {
+            "allow": true
+          },
+          "update": {
+            "allow": true
+          },
+          "detail": {
+            "allow": true
+          },
+          "delete": {
+            "allow": true
+          }
+        },
+        "Account": {
+          "allow": true,
+          "view": {
+            "allow": true
+          },
+          "create": {
+            "allow": true
+          },
+          "update": {
+            "allow": true
+          },
+          "detail": {
+            "allow": true
+          },
+          "delete": {
+            "allow": true
+          }
+        },
+        "Password": {
+          "allow": true,
+          "view": {
+            "allow": true
+          },
+          "detail": {
+            "allow": true
+          },
+          "export": {
+            "allow": true
+          }
+        }
+      },
+      "SystemLog": {
+        "allow": true,
+        "StoreRecord": {
+          "allow": false,
+          "view": {
+            "allow": true
+          },
+          "import": {
+            "allow": true
+          },
+          "create": {
+            "allow": true
+          },
+          "update": {
+            "allow": true
+          },
+          "detail": {
+            "allow": true
+          },
+          "delete": {
+            "allow": true
+          },
+          "export": {
+            "allow": true
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "code": 20000,
+  "data": {
+    "total": 1,
+    "items": [
+      {
+        "id": "002395dba148b4cedeee8b35",
+        "code": "C001",
+        "name": "小分队1",
+        "missionId": "",
+        "remark": "南通大学红十字会分队",
+        "members": [
+          {
+            "id": "002395dba148b4cedeee8b35",
+            "name": "张三",
+            "phoneNumber": "13925846857"
+          },
+          {
+            "id": "002395dba148b4cedeee8b35",
+            "name": "李四",
+            "phoneNumber": "13925846857"
+          }
+        ]
+      }
+    ]
+  }
+}
